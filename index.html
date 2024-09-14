@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanatiic - SmartStack Multipurpose Shelf</title>
+    <style>
+        /* General Style */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Header Style */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header img {
+            width: 100px;
+            animation: fadeInLeft 1.5s ease-in-out;
+        }
+
+        header h1 {
+            margin-top: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Navigation Style */
+        nav {
+            background-color: #222;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            animation: fadeInRight 1.5s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Container and Section Styles */
+        .container {
+            padding: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        .product-section { animation-delay: 0.2s; }
+        .specialities-section { animation-delay: 0.4s; }
+        .achievements-section { animation-delay: 0.6s; }
+        .goals-section { animation-delay: 0.8s; }
+        .contact-section { animation-delay: 1s; }
+
+        /* Button and Input Styles */
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #575757;
+        }
+
+        /* Smooth Scroll Effect */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .logo {
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="path_to_your_uploaded_logo/kk.jpg" alt="Fanatiic Logo" class="logo">
+        <h1>Welcome to Fanatiic</h1>
+        <p>Be Yourself. Build Yourself.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#product">Product</a>
+        <a href="#specialities">Specialities</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#goals">Future Goals</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Product Section -->
+        <section id="product" class="product-section">
+            <h2>Our Product: SmartStack</h2>
+            <p>Introducing SmartStack, our revolutionary multipurpose shelf designed to adapt to your modern lifestyle. Whether you're living in a compact apartment or need a flexible workspace, SmartStack is built to meet your needs. With detachable shelves and a foldable study table, SmartStack is not just a shelf—it's a versatile, smart solution for your living space. Made from high-quality, durable plastic, it’s lightweight, easy to clean, and built to last.</p>
+        </section>
+
+        <!-- Specialities Section -->
+        <section id="specialities" class="specialities-section">
+            <h2>Specialities</h2>
+            <ul>
+                <li>Modular and customizable design for flexible living.</li>
+                <li>Detachable shelves and foldable study table for easy space optimization.</li>
+                <li>High-quality plastic: lightweight, durable, and easy to maintain.</li>
+                <li>Sleek, modern look that fits into any room.</li>
+                <li>Perfect for urban living, small spaces, and modern offices.</li>
+            </ul>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section">
+            <h2>Our Achievements</h2>
+            <p>Fanatiic has been dedicated to innovative furniture solutions since its inception. Over the years, we've built a reputation for delivering high-quality, multipurpose products that cater to the modern lifestyle. Our product, SmartStack, has been featured in top interior design magazines and has won multiple awards for its innovative design and functionality.</p>
+        </section>
+
+        <!-- Goals Section -->
+        <section id="goals" class="goals-section">
+            <h2>Our Future Goals</h2>
+            <p>At Fanatiic, our goal is to continue revolutionizing the furniture industry by developing smart, eco-friendly solutions for modern living. We aim to expand our product line to include more modular and multifunctional pieces, and we are committed to using sustainable materials and practices to minimize our environmental impact. The future of living is smart, and we are excited to lead the way.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Whether you have questions about SmartStack or want to know more about Fanatiic, feel free to reach out to us.</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fanatiic. All rights reserved.</p>
+        <p>Follow us on:</p>
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+    </footer>
+
+</body>
+</html>
